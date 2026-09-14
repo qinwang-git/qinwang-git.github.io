@@ -111,6 +111,49 @@ article > header address + time::before {
     margin-right: 6px;
 }
 
+.service-list {
+    list-style: disc outside;
+    margin: 0 0 20px 30px;
+}
+
+.service-list li {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 4px;
+}
+
+.service-list li.service-group {
+    display: block;
+    list-style: none;
+    margin: 14px 0 6px 0;
+    font-style: italic;
+}
+
+.service-list li.service-group:first-child {
+    margin-top: 0;
+}
+
+.service-list .service-name {
+    flex: 1;
+}
+
+.service-list .service-years {
+    flex: 0 0 125px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .service-list li {
+        display: block;
+    }
+
+    .service-list .service-years {
+        display: block;
+        text-align: left;
+    }
+}
+
 em {
     font-style: normal;
     font-weight: bold;
