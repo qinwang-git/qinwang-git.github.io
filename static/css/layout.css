@@ -152,6 +152,7 @@ article > header address + time::before {
         display: block;
         text-align: left;
     }
+
 }
 
 em {
